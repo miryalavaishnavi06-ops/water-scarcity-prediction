@@ -1,0 +1,38 @@
+# Python environments and generated caches
+.venv/
+venv/
+.git/
+**/__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local Streamlit and portability test artifacts
+.tmp_streamlit_test/
+.python-tmp/
+.phase1_portability_test/
+.streamlit/secrets.toml
+.streamlit/cache/
+
+# Local tools and editor state
+.codex/
+.agents/
+.vscode/
+.idea/
+
+# Downloaded/raw data and one-off collection failures
+era5land_raw/
+data/*
+!data/DEMO_SYNTHETIC_phase1_24m_input.csv
+scripts/*_error.log
+scripts/era5land_fetch*.log
+
+# Results are historical/research outputs, not inference runtime files. Keep
+# this requested deployment audit; leave the original reports/artifacts local.
+results/*
+!results/phase1_portability_audit.txt
+
+# Unneeded older synthetic demo CSV; use the explicitly labeled Phase 1 demo
+demo_2026_input_bengaluru.csv
